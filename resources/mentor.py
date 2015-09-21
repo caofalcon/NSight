@@ -10,17 +10,17 @@ for line in file:
     else:
         parse = line.split(',')
         f.write(',\n{\n')
-        f.write('name: \'' + parse[0].strip() + '\'')
+        f.write('\tname: \'' + parse[0].strip() + '\'')
         
         if (len(parse) > 2) :
-            f.write(',\nyear: \'' + year + ' + ' + parse[2].strip() + '\'')
-            f.write(',\noption: \'' + parse[1].strip() + '\'')
+            f.write(',\n\tyear: \'' + year + ' + ' + parse[2].strip() + '\'')
+            f.write(',\n\toption: \'' + parse[1].strip() + '\'')
         elif (len(parse) > 1) :
-            f.write(',\nyear: \'' + year + '\'')
-            f.write(',\noption: \'' + parse[1].strip() + '\'')
+            f.write(',\n\tyear: \'' + year + '\'')
+            f.write(',\n\toption: \'' + parse[1].strip() + '\'')
         else :
-            f.write(',\nyear: \'' + year + '\'')
-            f.write(',\noption: \'undeclared\'')
+            f.write(',\n\tyear: \'' + year + '\'')
+            f.write(',\n\toption: \'undeclared\'')
             
         f.write('\n}')
 
