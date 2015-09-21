@@ -122,11 +122,6 @@
         option: 'MSF'
         },
         {
-        name: 'Armand Gurgu',
-        year: '1T7',
-        option: 'Robotics'
-        },
-        {
         name: 'Balthazar Crane',
         year: '1T7',
         option: 'Infra'
@@ -238,11 +233,6 @@
         },
         {
         name: 'Shai Bonen',
-        year: '1T6 + PEY',
-        option: 'ECE'
-        },
-        {
-        name: 'Wen Bo Li',
         year: '1T6 + PEY',
         option: 'ECE'
         },

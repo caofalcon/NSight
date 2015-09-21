@@ -23,7 +23,6 @@ Xiuyan Yu, ECE
 Shenglin (Annie) Yang, ECE
 Aidan Malone, , PEY
 Alexander Brandimarte, MSF
-Armand Gurgu, Robotics
 Balthazar Crane, Infra
 Ben Waitzer, Infra
 Emerson Grabke, Robotics
@@ -48,7 +47,6 @@ Kriisan Pathmarajah, Aero, PEY
 Max Wei, Energy, PEY
 Noor Shaikh, BME
 Shai Bonen, ECE, PEY
-Wen Bo Li, ECE, PEY
 Rahul Chandan, ECE, PEY
 1T5
 Deniz Jafari, , PEY

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Nsight | Engineering Science Mentorship Program</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +29,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <link rel="icon" type="image/png" href="resources/favicon.ico">
 
 </head>
 
@@ -45,27 +47,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">NSight Mentorship Program</a>
+                <a class="navbar-brand" href="index.html" style="color:white !important;" >NSight Mentorship Program</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="about.html">About</a>
+                <ul class="nav navbar-nav navbar-right" >
+                    <li>
+                        <a href="about.html" style="color:white !important;" >About</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
+                        <a href="events.html" style="color:white !important;" >Events</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html" style="color:white !important;" >Contact</a>
                     </li>
+                    <li>
+                        <a class="btn btn-md btn-default btn-block" target="_blank" style="padding:5px;margin-top:10px;"  href="https://docs.google.com/forms/d/1kK2Z24N00LtPRo1fKCXsdU0US0nuJKf9mKUZJ71IeaI/viewform">Sign Up</a>
+                    </li>
+                </div>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Page Content -->
     <div class="container">
 
@@ -79,6 +84,8 @@
                     <li><a href="index.html">Home</a>
                     </li>
                     <li class="active">About</li>
+                    <a href="mailto:nsight.mentors@gmail.com" target="_blank" class="pull-right" style="margin-left: 5px;"><i style="color:red;" class="fa fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/NSightMentorship" target="_blank" class="pull-right" style="margin-left: 5px;"><i class="fa fa-facebook-square"></i></a>
                 </ol>
             </div>
         </div>
@@ -86,13 +93,21 @@
 
         <!-- Intro Content -->
         <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+            <div class="col-md-5">
+                <img class="img-responsive" src="resources/about.png" alt="">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <h2>What is NSight?</h2>
                 <p>NSight is a student-run mentorship program that aims to provide support for first year Engineering Science students. It has been our experience that there are some questions that can only be answered by someone who has gone through what first year student are facing.</p>
-                <p>That said, NSight is not a tutoring service. Rather, we exist to help with anything outside of the classroom from general questions about university life to where to go downtown for good Ethiopian food to how to properly prepare for your first calculus exam. Basically, we’re here to provide you with whatever help you feel you need and to provide you with timely information sessions and entertaining diversions from academic pursuits.</p>
+                <p>That being said, NSight is not a tutoring service. Rather, we exist to help with anything outside of the classroom from general questions about university life, to where to go downtown for good Ethiopian food, to how to properly prepare for your first Calculus exam. Think of your mentor as your EngSci don, they are there to provide you with whatever help you feel you need, and to provide you with timely information sessions and entertaining diversions from academic pursuits.</p>
+                <p>The group of people behind this amazing program are the NSight Executive Team:</p>
+                <ul>
+                    <li>Co-Chairs: Rahul Chandan & Sowmya Tata</li>
+                    <li>VP Finance: Michael Chen</li>
+                    <li>VP Promotions: Xiuyan Yu</li>
+                    <li>VP Operations: Annie Shenglin Yang</li>
+                    <li>VP Logistics: Justin Chai</li>
+                </ul>
             </div>
         </div>
         <!-- /.row -->
@@ -103,9 +118,9 @@
             <div class="col-lg-12">
                 <h2 class="page-header">Our Mentor Team</h2>
             </div>
-            <div class="col-md-3 text-center" style="height: 270px;" ng-repeat="(index, mentor) in NSightMentorTeam.mentors">
-                <div class="thumbnail" style="height: 250px;">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+            <div class="col-md-2 col-sm-4 col-xs-6 text-center" style="height: 200px;" ng-repeat="(index, mentor) in NSightMentorTeam.mentors">
+                <div class="thumbnail" style="height: 190px;">
+                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
                     <div class="caption">
                         <h4>{{mentor.name}}<br>
                             <h4 style="color:navy">{{mentor.option}} {{mentor.year}}</h4>
@@ -116,39 +131,19 @@
         </div>
         <!-- /.row -->
 
-        <!-- Our Customers -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Our Customers</h2>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-        </div>
-        <!-- /.row -->
-
         <hr>
 
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; NSight Mentorship Program 2015</p>
+                    <p>Copyright &copy; NSight Mentorship Program 2015
+                        <a href="mailto:nsight.mentors@gmail.com" target="_blank" class="pull-right" style="margin-left: 5px;"><i class="fa fa-envelope fa-2x" style="color:red;"></i></a>
+                        <a href="https://www.facebook.com/NSightMentorship" target="_blank" class="pull-right" style="margin-left: 5px;"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </p>
+                    <p><i class="fa fa-envelope-o"></i> 
+                        <abbr title="Email">E</abbr>: <a href="mailto:nsight.mentors@gmail.com">nsight.mentors@gmail.com</a>
+                    </p>
                 </div>
             </div>
         </footer>
